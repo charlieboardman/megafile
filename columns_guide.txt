@@ -1,0 +1,19 @@
+date: Date of the transaction
+type: The type of the transaction (spend, exchange, refund, withdrawl, correction, etc)
+acct_code: Account code for the transaction. Applicable for spends and refunds
+acct_desc: Human-readable description of the account defined by the code
+class_code: Class code for the transaction. Applicable for spends and refunds
+class_desc: Human-readable description of the class defined by the code
+mxn_cost: Cost of the transaction in mxn. Positive is spend, negative is gain. Note that transactions can have USD and MXN costs
+mxn_txn_er: Exchange rate of the transaction in this row
+usd_cost: Cost of the transaction in usd. Positive is spend, negative is gain. Note that transactions can have USD and MXN costs
+calc_usd: The calculated equivalent usd amount of this transaction, using the transaction exchange rate mxn_txn_er
+vendor: The vendor in the transaction
+desc: Description of the transaction
+notes: Notes
+mxn_stash: Current amount of pesos on hand in the safe on the ranch, after the transaction in this row
+mxn_avg_er: Average exchange rate of the pesos in the safe
+usd_stash: Current amount of dollars on hand in the safe on the ranch, after the transaction in this row
+project: Project label, if any (i.e. Infant Orphanage, Nanny House)
+receipt_id: The unique ID generated for the receipt associated with this transaction
+source: Source of the funds, to keep track of petty cash vs reimbursements vs divvy, etc
