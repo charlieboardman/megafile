@@ -1,0 +1,7 @@
+All calculation will be performed in python (or bash!), and then rows appended to the sheet.
+
+All functions will read the last row into memory in order to calculate the next row. To this end, tail and >> would be amazing.
+
+spend
+exchange
+withdraw
