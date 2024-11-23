@@ -1,0 +1,55 @@
+account_number,full_name,account_type,account_subtype,description
+1000,Mex Petty Cash Fund,Bank,Cash on hand,Note withdrawals as a negative number when reporting on an expense report - DID WE DECIDE TO DO THIS?
+1490,Construction in Progress,Fixed Assets,Buildings,"Labor & Material for capitalized projects costing $2,500 or more"
+5040,Unallocated Expenses - Wire & Cash Transfers,Expenses,Other Business Expenses,Wires To Mexico & Cash Transfers (Charlie giving Pati cash)
+,,,,
+5000,Ask My Accountant,Expenses,,"I don't know where to code this purchase, please help"
+5500,Advertising & Marketing,Expenses,Advertising/Promotional,Advertising & Marketing Header Account
+5501,Advertising & Marketing:Contractor,Expenses,Advertising/Promotional,Contractor expenses for any Advertising & Marketing
+5502,Advertising & Marketing:Printing,Expenses,Advertising/Promotional,"Printing Expenses for Advertising & Marketing (cards, flyers, programs, mailers, etc.)"
+5660,Bank Charges & Merchant Fees,Expenses,Bank charges,Fees or charges from your bank or credit card
+5230,Car & Truck,Expenses,Auto,Car & Truck Header Account
+5231,Car & Truck:Fuel for PM Vehicles,Expenses,Auto,Fuel purchases for all Project Mexico vehicles. Does not include mileage reimbursements.
+5232,Car & Truck:Vehicle Maintenance & Repairs,Expenses,Auto,"All car maintenance supplies, parts and labor (contractors & vendors) to fix PM vehicles"
+5233,Car & Truck:Vehicle-Registrations & Fees,Expenses,Auto,"Car & truck registrations/fees for PM vehicles. NOT fuel, maintenance, tolls or car payments."
+5470,Contractors,Expenses,Payroll Expenses,"Services provided by 1099 contractors, such as landscapers, electricians, and web designers"
+5450,Equipment & Tools,Expenses,Supplies and materials,"Non consumable equipment/tools less than $2,500 each. Not for home building."
+5560,Food & Program Orphanage,Expenses,Supplies and materials,Food purchased and event expenses for orphanage
+5330,Government Fees,Expenses,Other Business Expenses,Use for imports and other governmental fees. NOT for toll expense
+5445,Homebuilding,Expenses,Supplies and materials,Homebuilding Expenses Header Account
+5446,Homebuilding:Purchases-Homebuilding Construction Materials,Expenses,Supplies and materials,"Steel, plywood, windows, doors, big ticket home building material costs"
+5447,Homebuilding:Purchases-Homebuilding Tools & Supplies,Expenses,Supplies and materials,Tools & Supplies for Homebuilding. Not building materials
+5448,Homebuilding:Purchases-Other Homebuilding Expenses,Expenses,Supplies and materials,"All other HB purchases, not construction materials, tools or supplies"
+5160,Insurance,Expenses,Insurance,Insurance Header Account
+5161,Insurance:Health Insurance,Expenses,Insurance,Health Insurance Premiums
+5162,Insurance:Liability & Other Insurances,Expenses,Insurance,"Liability, fire, theft, and other insurance for your business (not health or vehicle)"
+5163,Insurance:Vehicle Insurance,Expenses,Insurance,Vehicle insurance
+5590,Intern Expenses from Fundraising,Expenses,Other Miscellaneous Service Cost,Reimbursements to interns who fund their work through personal fundraising
+5595,Intern Stipend,Expenses,Other Miscellaneous Service Cost,Intern Stipend-Excess Fundraising paid out to interns
+5440,Job Supplies,Expenses,Supplies and materials,"Supplies to complete small jobs or projects with total cost less than $2,500. NOT for homebuilding costs."
+5300,Legal & Professional Services,Expenses,Legal and professional fees,"Professional services including legal, financial, accounting, and payroll"
+5570,Meals & Entertainment,Expenses,Meals and entertainment,"Client/potential donor meals, entertainment and business related travel meals "
+5170,"Medical-General, Not Psychology",Expenses,Other Business Expenses,"Medical-General, Not Psychology"
+5175,Medical-Psychology,Expenses,Other Business Expenses,Medical-Psychology
+5471,Mex Contractors,Expenses,Other Miscellaneous Service Cost,Mexican contractor expenses not able to be charged to another category
+5112,Mexico Wages,Expenses,Payroll Wage Expenses,All electronically paid and cash paid Mexican employees
+5140,Office Supplies & Software,Expenses,Office/General Administrative Expenses,"Office, kitchen, and bathroom supplies, including software under $2,500"
+5900,Orphanage Educational Expenses,Expenses,Other Business Expenses,"Orphanage Educational Expenses (not including school supplies, incidentals & tuition)"
+5902,Orphanage Educational Expenses:Supplies & Incidentals,Expenses,Other Business Expenses,Orphanage School Supplies & Incidentals
+5901,Orphanage Educational Expenses:Tuition,Expenses,Other Business Expenses,Orphanage Tuition
+5141,Other Business Expenses,Expenses,Office/General Administrative Expenses,"Other expenses for your business, including training and conferences"
+5565,Program & Event Expense-Orphanage,Expenses,Supplies and materials,Program & Event Expense - Orphanage
+5442,Purchases,Expenses,Supplies and materials,Discontinue using in April 2024
+5390,Registration Fees,Expenses,Other Business Expenses,"Event registration fees (FDF, Clergy Laity, other parish event fees). NOT vehicle registration fees."
+5460,Reimbursable Trip Expenses,Expenses,Advertising/Promotional,"Reimbursable Trip Expense for HB Group Refunds only, NOT for intern, volunteers or employee use"
+5120,Rent & Lease,Expenses,Rent or Lease of Buildings,"Office space, storage, vehicle, machinery, and equipment rentals and leases (short or long-term)"
+5240,Repairs & Maintenance,Expenses,Repair and maintenance,"(Formerly 5222) Repairs, maintenance, and cleaning for office space and equipment (not vehicles)"
+5362,Taxes & Licenses,Expenses,Taxes Paid,"Property and business taxes, licenses, memberships, and permits (not sales tax)"
+5580,Travel,Expenses,Travel,"Business travel including tolls, transportation, hotels, and tips (not meals)"
+5581,Travel-Mileage Reimbursements,Expenses,Travel,Mileage reimbursements to employees completing approved business tasks using personal vehicles.
+5260,Utilities,Expenses,Utilities,"Phone, gas, electric, water, internet, and other utilities for your business"
+7205,Restricted Income-Mexican Church Planting,Other Income,Other Miscellaneous Income,Restricted Income-Mexican Church Planting
+7210,Restricted Expense-Mexican Church Planting,Other Expense,Other Expense,Restricted Expense-Mexican Church Planting
+,,,,
+,,,,
+"Saturday, April 20, 2024 Saturday, April 20, 2024 12:16 AM GMTZ",,,,
