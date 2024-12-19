@@ -2,7 +2,6 @@ account_number,full_name,account_type,account_subtype,description
 1000,Mex Petty Cash Fund,Bank,Cash on hand,Note withdrawals as a negative number when reporting on an expense report - DID WE DECIDE TO DO THIS?
 1490,Construction in Progress,Fixed Assets,Buildings,"Labor & Material for capitalized projects costing $2,500 or more"
 5040,Unallocated Expenses - Wire & Cash Transfers,Expenses,Other Business Expenses,Wires To Mexico & Cash Transfers (Charlie giving Pati cash)
-,,,,
 5000,Ask My Accountant,Expenses,,"I don't know where to code this purchase, please help"
 5500,Advertising & Marketing,Expenses,Advertising/Promotional,Advertising & Marketing Header Account
 5501,Advertising & Marketing:Contractor,Expenses,Advertising/Promotional,Contractor expenses for any Advertising & Marketing
@@ -50,6 +49,3 @@ account_number,full_name,account_type,account_subtype,description
 5260,Utilities,Expenses,Utilities,"Phone, gas, electric, water, internet, and other utilities for your business"
 7205,Restricted Income-Mexican Church Planting,Other Income,Other Miscellaneous Income,Restricted Income-Mexican Church Planting
 7210,Restricted Expense-Mexican Church Planting,Other Expense,Other Expense,Restricted Expense-Mexican Church Planting
-,,,,
-,,,,
-"Saturday, April 20, 2024 Saturday, April 20, 2024 12:16 AM GMTZ",,,,

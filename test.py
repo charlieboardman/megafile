@@ -31,34 +31,3 @@ def fuzzy_autocomplete_prompt(field, strings):
 
     user_input = prompt_toolkit.prompt(f'Enter {field}: ', completer=FuzzyCompleter())
     return user_input
-
-
-def receipt_id_generator(description,transaction_date,master_path):
-    words = description.split()
-    first_letters = [x[0] for x in words]
-    acronym = ''.join(first_letters)
-    if len(acronym) > 6:
-        acronym = acronym[0:8]
-        
-    #Parse the date
-    if isinstance(transaction_date,date):
-        date_str = transaction_date.strftime('%Y-%m-%d')
-        
-    elif type(transaction_date) == str:
-        date_str = parser.parse(transaction_date).strftime('%Y-%m-%d')
-        
-    else:
-        print("Bad date format")
-        return(0)
-    
-    
-    #Read the last line of the master file
-    #Modify this so that it works even if the file is empty
-    with open(master_path,'r') as master_file:
-        transactions = master_file.readlines()
-        same_date_transactions = [t.strip('\n') for t in transactions if t[0:10] == date_str]
-        numeral = '{:02d}'.format(len(same_date_transactions)+1)
-                
-    final_string = f'{date_str}-{acronym}-{numeral}'
-    
-    return final_string
