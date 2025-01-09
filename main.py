@@ -40,7 +40,8 @@ notes = input('Notes: ')
 projects = data_entry.read_projects()
 project = data_entry.fuzzy_autocomplete_prompt('project',projects)
 print('Please capture receipt')
-receipt_pdf = capture_image()
+receipt_pdf = capture_image() #todo need to save this to disk/drive
 receipt_id = data_entry.receipt_id_generator(description,date,'ledger.csv')
+#todo need to append this row to the real ledger/google sheet
 row = [date,account_code,account_name,class_code,class_name,mxn,ER,usd,calc_usd,vendor,description,notes,project,receipt_id]
 print(row)
