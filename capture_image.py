@@ -60,12 +60,9 @@ def capture_image():
             continue
         
         if key == 13:  # 13 is enter
-            if not pages:  # If no pages were captured
-                print("No pages captured. Exiting without saving.")
-                cap.release()
-                cv2.destroyAllWindows()
-                return None, None
             pages.append(frame.copy())  # Save the full resolution frame
+            cap.release()
+            cv2.destroyAllWindows()
             n += 1
             print(f'{n} page(s) captured')
             break  # Exit the loop
