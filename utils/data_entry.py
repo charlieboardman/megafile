@@ -41,7 +41,7 @@ def fuzzy_autocomplete_prompt(field, strings_for_autocomplete):
 def receipt_id_generator(description,date_str,master_path):
     words = description.split()
     first_letters = [x[0] for x in words]
-    acronym = ''.join(first_letters)
+    acronym = ''.join(first_letters).lower()
     if len(acronym) > 6:
         acronym = acronym[0:6]
         
