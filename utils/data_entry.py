@@ -1,11 +1,11 @@
 #data_entry.py
 import csv
 
-def read_accounts(filepath='accounts.csv'):
+def read_accounts(filepath='accounting_config/accounts.csv'):
     with open(filepath, 'r') as file:
         accounts = list(csv.reader(file))[1:]
         return accounts
-def read_classes(filepath='classes.csv'):
+def read_classes(filepath='accounting_config/classes.csv'):
     with open(filepath, 'r') as file:
         classes = list(csv.reader(file))[1:]
         return classes
@@ -14,7 +14,7 @@ def read_vendors(filepath='ledger.csv'):
         csv_reader = csv.DictReader(file)
         vendors = [row['vendor'] for row in csv_reader]
         return vendors
-def read_projects(filepath='projects.txt'):
+def read_projects(filepath='accounting_config/projects.txt'):
     with open(filepath, 'r') as file:
         projects = [line.strip('\n') for line in file.readlines()]
         return projects

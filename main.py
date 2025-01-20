@@ -1,6 +1,6 @@
-from capture_image import capture_image
+from utils.capture_image import capture_image
 from datetime import date
-import data_entry
+import utils.data_entry as data_entry
 from dateparser import parse
 
 row = dict()
