@@ -1,3 +1,4 @@
 ledger.csv
 receipts/*
 **/__pycache__/
+.~lock.*#
