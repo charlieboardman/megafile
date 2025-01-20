@@ -54,5 +54,7 @@ with open('ledger.csv', 'a', newline='') as file:
     writer.writerow(row)
 
 #Save the receipt in the receipts file
+with open(f"receipts/{row['receipt_id']}.pdf", 'wb') as pdf_file:
+    pdf_file.write(receipt_pdf)
 
 print(row)
