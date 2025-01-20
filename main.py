@@ -2,6 +2,7 @@ from utils.capture_image import capture_image
 from datetime import date
 import utils.data_entry as data_entry
 from dateparser import parse
+import csv
 
 row = dict()
 
@@ -46,6 +47,12 @@ row['project'] = data_entry.fuzzy_autocomplete_prompt('project',projects)
 print('Please capture receipt')
 receipt_pdf = capture_image() #todo need to save this to disk/drive
 row['receipt_id'] = data_entry.receipt_id_generator(row['description'],row['date'],'ledger.csv')
-#todo need to append the row to the real ledger/google sheet
+
+#Append the row to the ledger
+with open('ledger.csv', 'a', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=list(row.keys()))
+    writer.writerow(row)
+
+#Save the receipt in the receipts file
 
 print(row)
