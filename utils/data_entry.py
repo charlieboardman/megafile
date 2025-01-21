@@ -12,7 +12,7 @@ def read_classes(filepath='accounting_config/classes.csv'):
 def read_vendors(filepath='ledger.csv'):
     with open(filepath, 'r') as file:
         csv_reader = csv.DictReader(file)
-        vendors = [row['vendor'] for row in csv_reader]
+        vendors = list({row['vendor'] for row in csv_reader if row['vendor']})
         return vendors
 def read_projects(filepath='accounting_config/projects.txt'):
     with open(filepath, 'r') as file:
