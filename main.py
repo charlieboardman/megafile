@@ -31,8 +31,6 @@ except:
     ER = ''
 
 usd = input('usd: ')
-#todo handle this error better
-float(usd)
 
 calc_usd = calculate_usd(usd,mxn,ER)
 #print(calc_usd)
