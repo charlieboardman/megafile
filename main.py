@@ -1,6 +1,7 @@
 from utils.capture_image import capture_image
 from datetime import date
 import utils.data_entry as data_entry
+from utils.calculate_usd import calculate_usd
 from dateparser import parse
 import csv
 
@@ -33,7 +34,7 @@ usd = input('usd: ')
 #todo handle this error better
 float(usd)
 
-calc_usd = "{:.2f}".format(float(usd)+float(mxn)/float(ER))
+calc_usd = calculate_usd(usd,mxn,ER)
 #print(calc_usd)
 
 row['mxn'] = mxn; row['ER'] = ER; row['usd'] = usd; row['calc_usd'] = calc_usd
