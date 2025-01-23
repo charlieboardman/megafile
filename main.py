@@ -3,7 +3,7 @@ from datetime import date
 import utils.data_entry as data_entry
 from utils.calculate_usd import calculate_usd
 from dateparser import parse
-import csv
+from openpyxl import load_workbook
 
 row = dict()
 
@@ -44,16 +44,17 @@ row['notes'] = input('Notes: ')
 projects = data_entry.read_projects()
 row['project'] = data_entry.fuzzy_autocomplete_prompt('project',projects)
 print('Please capture receipt')
-receipt_pdf = capture_image() #todo need to save this to disk/drive
+#receipt_pdf = capture_image() #todo need to save this to disk/drive
 row['receipt_id'] = data_entry.receipt_id_generator(row['description'],row['date'],'ledger.csv')
 
 #Append the row to the ledger
-with open('ledger.csv', 'a', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=list(row.keys()))
-    writer.writerow(row)
+#wb = load_workbook('ledger.xlsx', read_only=False)
+#ws = wb.active
+#ws.append(list(row.values))
+
 
 #Save the receipt in the receipts file
-with open(f"receipts/{row['receipt_id']}.pdf", 'wb') as pdf_file:
-    pdf_file.write(receipt_pdf)
+#with open(f"receipts/{row['receipt_id']}.pdf", 'wb') as pdf_file:
+#    pdf_file.write(receipt_pdf)
 
 print(row)
