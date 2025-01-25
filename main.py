@@ -15,6 +15,13 @@ classes_strings_for_autocomplete = [f'{class_number} {class_name}' for [class_nu
 
 row['date'] = parse(input('Date: ')).date().isoformat()
 
+payment_source_strings_for_autocomplete = data_entry.read_payment_sources()
+payment_source = data_entry.fuzzy_autocomplete_prompt('payment source (blank for petty cash)',payment_source_strings_for_autocomplete)
+
+if payment_source == '':
+    payment_source = 'Petty cash'
+row['payment_source'] = payment_source
+
 account_ = data_entry.fuzzy_autocomplete_prompt('account',accounts_strings_for_autocomplete)
 row['account_code'] = account_.split(' ')[0]
 row['account_name'] = ' '.join(account_.split(' ')[1:])
@@ -44,8 +51,9 @@ row['notes'] = input('Notes: ')
 projects = data_entry.read_projects()
 row['project'] = data_entry.fuzzy_autocomplete_prompt('project',projects)
 print('Please capture receipt')
-receipt_pdf = capture_image() #todo need to save this to disk/drive
+receipt_pdf = capture_image()
 row['receipt_id'] = data_entry.receipt_id_generator(row['description'],row['date'],'ledger.csv')
+row['accounting_notes'] = '' #Add a blank column for accounting notes
 
 #Append the row to the ledger
 with open('ledger.csv', 'a', newline='') as file:

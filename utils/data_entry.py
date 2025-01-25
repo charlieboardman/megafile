@@ -18,6 +18,10 @@ def read_projects(filepath='accounting_config/projects.txt'):
     with open(filepath, 'r') as file:
         projects = [line.strip('\n') for line in file.readlines()]
         return projects
+def read_payment_sources(filepath='accounting_config/payment_sources.txt'):
+    with open(filepath, 'r') as file:
+        payment_sources = [line.strip('\n') for line in file.readlines()]
+        return payment_sources
 
 import prompt_toolkit
 from prompt_toolkit.completion import Completer, Completion
