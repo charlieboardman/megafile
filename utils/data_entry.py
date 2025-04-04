@@ -40,22 +40,3 @@ def fuzzy_autocomplete_prompt(field, strings_for_autocomplete):
                 yield Completion(m, start_position=-len(line_before_cursor))
     user_input = prompt_toolkit.prompt(f'Enter {field}: ', completer=FuzzyCompleter())
     return user_input
-
-
-def receipt_id_generator(description,date_str,master_path):
-    words = description.split()
-    first_letters = [x[0] for x in words]
-    acronym = ''.join(first_letters).lower()
-    if len(acronym) > 6:
-        acronym = acronym[0:6]
-        
-    #Read the last line of the master file
-    #Modify this so that it works even if the file is empty
-    with open(master_path,'r') as master_file:
-        transactions = master_file.readlines()
-        same_date_transactions = [t.strip('\n') for t in transactions if t[0:10] == date_str]
-        numeral = '{:02d}'.format(len(same_date_transactions)+1)
-                
-    final_string = f'{date_str}-n{numeral}-{acronym}'
-    
-    return final_string
