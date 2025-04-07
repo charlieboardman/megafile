@@ -3,6 +3,7 @@ charset-normalizer==3.4.1
 dateparser==1.2.1
 Deprecated==1.2.18
 dotenv-python==0.0.1
+fuzzyfinder==2.2.0
 idna==3.10
 img2pdf==0.6.0
 lxml==5.3.2
@@ -11,6 +12,7 @@ opencv-python==4.11.0.86
 packaging==24.2
 pikepdf==9.6.0
 pillow==11.1.0
+prompt_toolkit==3.0.50
 python-dateutil==2.9.0.post0
 pytz==2025.2
 regex==2024.11.6
@@ -18,4 +20,5 @@ requests==2.32.3
 six==1.17.0
 tzlocal==5.3.1
 urllib3==2.3.0
+wcwidth==0.2.13
 wrapt==1.17.2
