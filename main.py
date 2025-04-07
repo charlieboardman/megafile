@@ -68,6 +68,9 @@ load_dotenv()
 GAS_APP_URL = os.getenv("GAS_APP_URL")
 HMAC_SECRET_KEY = os.getenv("HMAC_SECRET_KEY")
 
+#print row for debug
+print(row)
+
 #Post the receipt to the web app
 result = post_data_to_gas(row, receipt_base64, GAS_APP_URL, HMAC_SECRET_KEY)
 
