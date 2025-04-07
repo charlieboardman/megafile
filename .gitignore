@@ -3,3 +3,4 @@ receipts/*
 **/__pycache__/
 .~lock.*#
 .env
+.venv
