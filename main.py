@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 from utils.gas_poster import post_data_to_gas
 from utils.fiscal_year_calculator import fiscal_year_calculator
+import base64
 
 row = dict()
 
@@ -55,9 +56,10 @@ row['notes'] = input('Notes: ')
 projects = data_entry.read_projects()
 row['project'] = data_entry.fuzzy_autocomplete_prompt('project',projects)
 
-#Capture receipt image
+#Capture receipt image and convert to base64 string
 print('Please capture receipt')
 receipt_pdf = capture_image()
+receipt_base64 = base64.b64encode(receipt_pdf).decode('utf-8')
 
 row['accounting_notes'] = '' #Add a blank column for accounting notes
 
@@ -67,6 +69,6 @@ GAS_APP_URL = os.getenv("GAS_APP_URL")
 HMAC_SECRET_KEY = os.getenv("HMAC_SECRET_KEY")
 
 #Post the receipt to the web app
-result = post_data_to_gas(row, receipt_pdf, GAS_APP_URL, HMAC_SECRET_KEY)
+result = post_data_to_gas(row, receipt_base64, GAS_APP_URL, HMAC_SECRET_KEY)
 
 print(result)
